@@ -1,0 +1,17 @@
+docker images
+docker pull image-name
+docker ps
+docker ps -a
+docker run -d --name cont-name -p 1234:80 image-name
+1234 = hostport
+80 = containerport
+-d = detach
+-p = publish
+
+docker stop cont1 cont2
+docker stop $(docker ps)
+docker start cont1 cont2 cont3
+docker start $(docker ps -a)
+docker rm cont1
+docker rm -f cont1
+docker container prune
