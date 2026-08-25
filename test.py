@@ -1,7 +1,7 @@
 
 from datetime import datetime
 
-now = datetime.now() # current date and time
+now = datetime.now() 
 
 year = now.strftime("%Y")
 print("year:", year)
